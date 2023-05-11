@@ -12,23 +12,23 @@ class Dog {
 
 
 let arr;
-const showDog = (id) => {
+const showDog = (id - 1) => {
     
     modal.innerHTML =
     `
     <div class="modal-content">
-        <img src="https://usersdogs.dmytrominochkin.cloud/images/dog/p${arr[id-1].id}.jpeg">
+        <img src="https://usersdogs.dmytrominochkin.cloud/images/dog/p${arr[id].id}.jpeg">
         <section class="mod">
-            <b class="name">${arr[id-1].title}</b>
+            <b class="name">${arr[id].title}</b>
             <hr>
             <p class="about">Sex</p>
-            <p class="data">${arr[id-1].sex}</p>
+            <p class="data">${arr[id].sex}</p>
             <hr>
             <p class="about">Age</p>
-            <p class="data">${arr[id-1].age}</p>
+            <p class="data">${arr[id].age}</p>
             <hr>
             <p class="about">Personality</p>
-            <p class="data">${arr[id-1].description}</p>
+            <p class="data">${arr[id].description}</p>
         </section>
         <button class="button-close-modal">X</button>
     </div>
